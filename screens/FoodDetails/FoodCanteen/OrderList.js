@@ -31,7 +31,7 @@ const OrderList = () => {
                     }
                 });
 
-                console.log(response.data); // Add this line to check the response
+                console.log(response.data);
                 setOrders(response.data);
 
                 const userResponse = await axios.get('http://127.0.0.1:8000/details/', {
